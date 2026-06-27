@@ -57,3 +57,4 @@ allow hal_display_demura_default vendor_persist_display_file:file create_file_pe
 # Rule for display demura AIDL hal
 hal_attribute_service(vendor_hal_display_demura, vendor_hal_display_demura_aidl_service)
 binder_call(vendor_hal_display_demura_server, servicemanager)
+binder_call(servicemanager, vendor_hal_display_demura_server)
